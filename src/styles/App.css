@@ -1,20 +1,77 @@
 /* styles/App.css */
+body {
+    background-image: url("../images/image1.jpg");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    height: 100vh; /* Makes sure the body takes the full height of the viewport */
+    margin: 0; /* Resets default margin */
+}
 
 .App {
     display: flex;
+    flex-direction: column; /* Added for better layout */
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .title-head {
+    height: 100vh; /* Full height for centering */
+    background-color: rgba(26, 23, 23, 0.8); /* Semi-transparent background */
+    border-radius: 20px; /* Reduced border radius for a more modern look */
+    margin: 20px;
+    margin-top: 45px;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.App-header {
+    width: 100%;
+    padding: 10px 0; /* Added padding for the header */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for header */
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Aligns to the top */
+    left: 0; /* Aligns to the left */
+}
+
+.app-nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+}
+
+.nav-list {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Ensures items are in a row */
+}
+
+.nav-item {
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+.nav-link {
+    color: #1dce6d; /* Green color for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the text bold */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    color: #007BFF; /* Blue color on hover */
+}
+
+.title-head {
     font-size: 2.5rem;
-    color: #333;
+    color: #ffffff; /* Changed to white for better contrast */
     text-align: center;
-    margin: 0;
+    margin: 0; /* Resets margin */
     padding: 20px;
-    border-bottom: 2px solid #007BFF;
-  }
-  
+    border-bottom: 2px solid #007BFF; /* Blue border */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .title-head {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    .nav-item {
+        margin: 0 10px; /* Reduced margin on mobile */
+    }
+}
