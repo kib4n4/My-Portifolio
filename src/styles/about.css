@@ -1,0 +1,52 @@
+.about-title {
+    font-size: 2rem; /* Reduced from 2.5rem to 2rem */
+    color: #00ffcc; /* Neon green color */
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 28px; /* Reduced from 20px to 16px */
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.7); /* Glowing text effect */
+}
+
+.about-me {
+    background-color: rgba(117, 117, 231, 0.9); /* Dark background with slight transparency */
+    border-radius: 8px; /* Reduced from 10px to 8px */
+    padding: 16px; /* Reduced from 20px to 16px */
+    max-width: 480px; /* Reduced from 600px to 480px */
+    margin: 0 auto; /* Center the container */
+    box-shadow: 0 4px 20px rgba(0, 255, 204, 0.3); /* Enhanced shadow */
+    animation: fadeIn 0.5s; /* Fade-in effect */
+    border: 1px solid #00ffcc; /* Neon border */
+}
+
+.skills-title {
+    font-size: 1.6rem; /* Reduced from 2rem to 1.6rem */
+    text-align: center;
+    color: #00ccff; /* Neon blue color */
+    margin-top: 16px; /* Reduced from 20px to 16px */
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7); /* Glowing text effect */
+}
+
+.skills-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.skills-list li {
+    text-align: center;
+    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for list items */
+    margin: 4px 0; /* Reduced from 5px to 4px */
+    padding: 8px; /* Reduced from 10px to 8px */
+    border-radius: 4px; /* Reduced from 5px to 4px */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.skills-list li:hover {
+    background-color: rgba(0, 204, 255, 0.3); /* Light blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
