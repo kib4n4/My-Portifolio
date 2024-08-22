@@ -1,6 +1,7 @@
 /* styles/App.css */
 body {
     background-image: url("../images/image1.jpg");
+    background-position: center; /* Centers the background image */
     background-size: cover; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents the background from repeating */
     height: 100vh; /* Makes sure the body takes the full height of the viewport */
@@ -13,7 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full height for centering */
-    background-color: rgba(26, 23, 23, 0.8); /* Semi-transparent background */
+    background-color: rgba(2, 1, 1, 0.8); /* Semi-transparent background */
+    opacity: 0.8;
     border-radius: 20px; /* Reduced border radius for a more modern look */
     margin: 20px;
     margin-top: 45px;
@@ -62,6 +64,7 @@ body {
     text-align: center;
     margin-top:0; /* Resets margin */
     padding: 20px;
+    position: sticky;
     border-bottom: 2px solid #007BFF; /* Blue border */
 }
 

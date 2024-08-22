@@ -5,7 +5,7 @@ function About() {
     const [skills, setSkills] = useState([]);
 
     useEffect(() => {
-        const allSkills = ["HTML", "CSS", "JavaScript", "Python", "React", "Flask", "SQL", "NoSQL"];
+        const allSkills = ["HTML", "CSS", "JavaScript", "Python", "React", "Flask", "SQL"];
         let index = 0;
         const interval = setInterval(() => {
             if (index < allSkills.length) {
@@ -23,9 +23,7 @@ function About() {
         <>
             <h2 className='about-title'>About Me</h2>
             <div className='about-me'>
-                <p>
-                    I am a junior software engineer with a passion for web development and a strong foundation in various programming languages. Proficient in JavaScript and Python, I enjoy creating dynamic applications that enhance user experiences.
-                </p>
+            <p> I am a junior software engineer specializing in web development, equipped with a solid foundation in multiple programming languages. With proficiency in JavaScript and Python, I am dedicated to developing dynamic applications that significantly enhance user experiences. </p>
                 <h2 className='skills-title'>Skills</h2>
                 <ul className='skills-list'>
                     {skills.map((skill, index) => (
