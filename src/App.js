@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./styles/App.css";
 import About from "./pages/about"; // Ensure you create About.js
 import Contact from "./pages/contact"; // Ensure you create Contact.js
+import Home from "./pages/home"; // Import the Home component
+import Services from "./pages/services"; // Import the Services component
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
                 <Link to="/about" className="nav-link">About</Link>
               </li>
               <li className="nav-item">
+                <Link to="/services" className="nav-link">Services</Link> {/* Added Services link */}
+              </li>
+              <li className="nav-item">
                 <Link to="/contact" className="nav-link">Contact</Link>
               </li>
             </ul>
@@ -25,10 +30,10 @@ function App() {
         </header>
 
         <div className="App">
-          <h1 className="title-head">kib4n4's Portfolio</h1>
           <Routes>
-            <Route path="/" element={<h2>Welcome to the Home Page</h2>} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} /> {/* Added Services route */}
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>

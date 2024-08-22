@@ -1,57 +1,62 @@
 /* styles/App.css */
 body {
     background-image: url("../images/image1.jpg");
-    background-position: center; /* Centers the background image */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    height: 100vh; /* Makes sure the body takes the full height of the viewport */
-    margin: 0; /* Resets default margin */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+    font-family: 'Arial', sans-serif; /* Clean font for better readability */
 }
 
 .App {
     display: flex;
-    flex-direction: column; /* Added for better layout */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height for centering */
-    background-color: rgba(2, 1, 1, 0.8); /* Semi-transparent background */
-    opacity: 0.8;
-    border-radius: 20px; /* Reduced border radius for a more modern look */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(2, 1, 1, 0.8);
+    opacity: 0.9; /* Slightly increased opacity for better visibility */
+    border-radius: 15px; /* Reduced border radius for a sharper look */
     margin: 20px;
-    margin-top: 45px;
-    padding: 20px; /* Added padding for better spacing */
+    margin-top: 50px;
+   max-height: 800px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
 }
 
 .App-header {
     width: 100%;
-    padding: 10px 0; /* Added padding for the header */
-    background-color: rgba(238, 224, 224, 0.7); /* Semi-transparent background for header */
-    position: fixed; /* Make the header fixed */
-    top: 0; /* Aligns to the top */
-    left: 0; /* Aligns to the left */
+    padding: 10px 0;
+    background-color: rgba(238, 224, 224, 0.8); /* Increased opacity for better contrast */
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for the header */
 }
 
 .app-nav {
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center;
 }
 
 .nav-list {
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    display: flex; /* Ensures items are in a row */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .nav-item {
-    margin: 0 15px; /* Spacing between nav items */
+    margin: 0 10px; /* Reduced margin for tighter spacing */
 }
 
 .nav-link {
-    color: #1c2520; /* Green color for links */
-    text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Makes the text bold */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    color: #1b717c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .nav-link:hover {
@@ -60,12 +65,12 @@ body {
 
 .title-head {
     font-size: 2.5rem;
-    color: #54e780; /* Changed to white for better contrast */
+    color: #54e780; /* Changed to a brighter color for contrast */
     text-align: center;
-    margin-top:0; /* Resets margin */
+    margin-top: 0;
     padding: 20px;
     position: sticky;
-    border-bottom: 2px solid #007BFF; /* Blue border */
+    border-bottom: 2px solid #007BFF;
 }
 
 /* Responsive design */
@@ -75,6 +80,10 @@ body {
     }
 
     .nav-item {
-        margin: 0 10px; /* Reduced margin on mobile */
+        margin: 0 5px; /* Further reduced margin on mobile */
+    }
+
+    .App {
+        padding: 15px; /* Reduced padding on mobile */
     }
 }
