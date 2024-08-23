@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../styles/home.css';
 
 function Home() {
@@ -10,8 +11,8 @@ function Home() {
                 Discover my projects, skills, and experiences. I am passionate about web development and always eager to learn new technologies.
             </p>
             <div className="cta-container">
-                <a href="#projects" className="cta-button">Services</a>
-                <a href="#contact" className="cta-button">Contact Me</a>
+                <Link to="/services" className="cta-button">Services</Link> {/* Updated to Link */}
+                <Link to="/contact" className="cta-button">Contact Me</Link> {/* Updated to Link */}
             </div>
         </div>
     );
