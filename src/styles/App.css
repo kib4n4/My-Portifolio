@@ -16,24 +16,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    background-color: rgba(2, 1, 1, 0.8);
-    opacity: 0.9; /* Slightly increased opacity for better visibility */
-    border-radius: 15px; /* Reduced border radius for a sharper look */
+    background-color: rgba(2, 1, 1, 0.8); /* Dark background for contrast */
+    opacity: 0.95; /* Increased opacity for better visibility */
+    border-radius: 15px; /* Rounded corners */
     margin: 20px;
     margin-top: 50px;
-   max-height: 800px;
+    max-height: 800px;
     padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */
 }
 
 .App-header {
     width: 100%;
     padding: 10px 0;
-    background-color: rgba(238, 224, 224, 0.8); /* Increased opacity for better contrast */
+    background-color: rgba(30, 30, 30, 0.9); /* Darker header for contrast */
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for the header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for the header */
 }
 
 .app-nav {
@@ -49,11 +49,11 @@ body {
 }
 
 .nav-item {
-    margin: 0 10px; /* Reduced margin for tighter spacing */
+    margin: 0 15px; /* Increased margin for better spacing */
 }
 
 .nav-link {
-    color: #1b717c;
+    color: #00ccff; /* Match services link color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -65,12 +65,12 @@ body {
 
 .title-head {
     font-size: 2.5rem;
-    color: #54e780; /* Changed to a brighter color for contrast */
+    color: #54e780; /* Bright color for contrast */
     text-align: center;
     margin-top: 0;
     padding: 20px;
     position: sticky;
-    border-bottom: 2px solid #007BFF;
+    border-bottom: 2px solid #00ccff; /* Match services border color */
 }
 
 /* Responsive design */
@@ -80,7 +80,7 @@ body {
     }
 
     .nav-item {
-        margin: 0 5px; /* Further reduced margin on mobile */
+        margin: 0 10px; /* Adjusted margin on mobile */
     }
 
     .App {

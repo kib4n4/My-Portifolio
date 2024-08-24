@@ -1,6 +1,10 @@
+/* styles/contact.css */
 ul {
     list-style: none;
     padding: 0; /* Remove default padding */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center items */
 }
 
 .example-2 {
@@ -14,6 +18,9 @@ ul {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow for depth */
     position: relative; /* For neon effect */
     overflow: hidden; /* Contain neon effect */
+    width: 90%; /* Full width on small screens */
+    max-width: 400px; /* Limit max width */
+    margin: 20px; /* Margin for spacing */
 }
 
 .example-2::before {
@@ -35,7 +42,7 @@ ul {
 }
 
 .example-2 .icon-content {
-    margin: 0 15px;
+    margin: 10px; /* Adjust margin for better spacing */
     position: relative;
 }
 
@@ -134,5 +141,37 @@ ul {
     100% {
         border-color: rgba(0, 204, 255, 1);
         box-shadow: 0 0 20px rgba(0, 204, 255, 1), 0 0 30px rgba(0, 204, 255, 1);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .example-2 {
+        width: 80%; /* Reduce width on tablets */
+    }
+
+    .example-2 .icon-content {
+        margin: 5px; /* Adjust margin for smaller devices */
+    }
+
+    .example-2 .icon-content a {
+        width: 50px; /* Smaller icon size */
+        height: 50px; /* Smaller icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .example-2 {
+        width: 90%; /* Full width on mobile */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .example-2 .icon-content a {
+        width: 40px; /* Even smaller icon size */
+        height: 40px; /* Even smaller icon size */
+    }
+
+    .example-2 .icon-content .tooltip {
+        font-size: 12px; /* Smaller tooltip font */
     }
 }

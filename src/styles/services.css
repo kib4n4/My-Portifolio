@@ -1,36 +1,37 @@
+/* styles/services.css */
 .services-container {
     text-align: center;
-    padding: 40px;
-    border-radius: 20px;
-    min-height: 100vh;
+    padding: 20px; /* Adjust padding based on content size */
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
 }
 
 .services-title {
-    font-size: 2.5rem; /* Reduced size */
+    font-size: 2rem; /* Increased base size for better readability */
     color: #00ccff;
-    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7), 0 0 20px rgba(0, 204, 255, 0.5);
-    margin-bottom: 30px; /* Reduced margin */
+    text-shadow: 0 0 5px rgba(0, 204, 255, 0.7), 0 0 10px rgba(0, 204, 255, 0.5);
+    margin-bottom: 20px; /* Adjust margin for spacing */
 }
 
 .services-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Reduced gap */
+    gap: 15px; /* Increased gap for better spacing */
 }
 
 .service-item {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 15px; /* Reduced padding */
-    width: 200px; /* Smaller width */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px; /* Increased padding for better content spacing */
+    width: 200px; /* Base width for desktop */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    flex: 1 1 200px; /* Flex-grow and shrink for responsiveness */
+    max-width: 300px; /* Max width to prevent excessive stretching */
 }
 
 .service-item:hover {
@@ -38,12 +39,51 @@
 }
 
 .service-name {
-    font-size: 1.3rem; /* Reduced size */
+    font-size: 1.4rem; /* Increased size for better readability */
     color: #00bfff;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .service-description {
-    font-size: 0.9rem; /* Reduced size */
+    font-size: 1rem; /* Increased size for better readability */
     color: #eaeaea;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 1.6rem; /* Adjust title size for tablets */
+    }
+
+    .service-item {
+        width: 150px; /* Adjust width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .service-name {
+        font-size: 1.2rem; /* Adjust name size for smaller screens */
+    }
+
+    .service-description {
+        font-size: 0.9rem; /* Adjust description size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-title {
+        font-size: 1.4rem; /* Further adjust title size for mobile */
+    }
+
+    .service-item {
+        width: 100%; /* Full width for mobile */
+        max-width: none; /* Remove max-width for mobile */
+    }
+
+    .service-name {
+        font-size: 1rem; /* Further adjust name size for mobile */
+    }
+
+    .service-description {
+        font-size: 0.8rem; /* Further adjust description size for mobile */
+    }
 }

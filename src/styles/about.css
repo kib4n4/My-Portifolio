@@ -1,62 +1,78 @@
+/* Base styles */
+body {
+    background-color: #101010;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for responsive layout */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjust padding based on content size */
+    margin: 0 auto; /* Center horizontally on all devices */
+    max-width: 700px; /* Adjust for larger screens, narrow for smaller */
+}
+
+/* About Me section */
 .about-title {
-    font-size: 2.2rem; /* Slightly increased for better prominence */
-    color: #00ffcc; /* Neon green color */
+    font-size: 1.8rem; /* Adjusted for consistency with services */
+    color: #00ccff; /* Match services title color */
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px; /* Adjusted margin */
-    text-shadow: 0 0 15px rgba(0, 255, 204, 0.8); /* Enhanced glowing effect */
-    transition: color 0.3s; /* Smooth color transition */
+    margin: 10px 0; /* Adjust margin for spacing */
+    text-shadow: 0 0 5px rgba(0, 204, 255, 0.7), 0 0 10px rgba(0, 204, 255, 0.5); /* Match services text shadow */
+    transition: color 0.3s;
 }
 
 .about-title:hover {
-    color: #00cc99; /* Slightly darker neon green on hover */
+    color: #00bfff; /* Match services hover color */
 }
 
 .about-me {
-    background-color: rgba(159, 226, 217, 0.9); /* Darker background for contrast */
-    background: rgba(255, 255, 255, 0.1);
-    color: aliceblue;
-    border-radius: 10px; /* Increased for a smoother look */
-    padding: 20px; /* Increased padding for better spacing */
-    max-width: 480px; /* Retained max width */
-    max-height: 480px;
-    margin: 0 auto; /* Center the container */
-    box-shadow: 0 8px 30px rgba(0, 255, 204, 0.5); /* Enhanced shadow for depth */
-    animation: fadeIn 0.5s; /* Fade-in effect */
-    border: 2px solid #00ffcc; /* Thicker neon border */
-    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.1); /* Match services item background */
+    border-radius: 10px; /* Adjust for smoother look */
+    padding: 15px; /* Adjust padding based on content size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Match services shadow */
+    border: 1px solid #00ccff; /* Match services border color */
+    animation: fadeIn 0.5s;
 }
 
+/* Skills section */
 .skills-title {
-    font-size: 1.8rem; /* Slightly increased for better visibility */
+    font-size: 1.2rem; /* Adjust for readability on all devices */
     text-align: center;
-    color: #00ccff; /* Neon blue color */
-    margin-top: 20px; /* Adjusted margin */
-    text-shadow: 0 0 15px rgba(0, 204, 255, 0.8); /* Enhanced glowing effect */
-    transition: color 0.3s; /* Smooth color transition */
+    color: #00ccff; /* Match services title color */
+    margin: 10px 0;
+    text-shadow: 0 0 5px rgba(0, 204, 255, 0.8); /* Match services text shadow */
+    transition: color 0.3s;
 }
 
 .skills-title:hover {
-    color: #0099cc; /* Slightly darker blue on hover */
+    color: #00bfff; /* Match services hover color */
 }
 
 .skills-list {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Center horizontally on all devices */
+    display: flex; /* Arrange skills horizontally on larger screens */
+    flex-wrap: wrap; /* Wrap skills to multiple lines on smaller screens */
+    justify-content: center; /* Center skills horizontally */
 }
 
 .skills-list li {
     text-align: center;
-    margin: 10px 0; /* Adjusted margin for tighter spacing */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    padding: 12px; /* Increased padding */
-    border-radius: 6px; /* Slightly increased border radius */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    margin: 5px; /* Adjust margin for spacing */
+    padding: 5px 10px; /* Adjust padding based on content size */
+    background-color: rgba(255, 255, 255, 0.1); /* Match services item background */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .skills-list li:hover {
-    background-color: rgba(0, 204, 255, 0.5); /* Brighter blue on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: rgba(0, 204, 255, 0.5); /* Match services hover effect */
+    transform: scale(1.03); /* Subtle enlarge on hover */
 }
 
 /* Fade-in animation */

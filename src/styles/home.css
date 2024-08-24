@@ -1,7 +1,13 @@
+/* Base styles */
+body {
+    background-color: #101010;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
 .home-container {
     text-align: center;
     padding: 50px;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
     border-radius: 20px;
     min-height: 40vh;
     display: flex;
@@ -13,20 +19,20 @@
 
 .t-head {
     font-size: 3rem;
-    color: #00ccff;
-    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7), 0 0 20px rgba(0, 204, 255, 0.5);
+    color: #00ccff; /* Match services title color */
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7), 0 0 20px rgba(0, 204, 255, 0.5); /* Match services text shadow */
     margin-bottom: 20px;
 }
 
 .home-page {
     font-size: 2rem;
-    color: #ffffff;
+    color: #ffffff; /* Keep white for contrast */
     margin-bottom: 20px;
 }
 
 .intro-text {
     font-size: 1.2rem;
-    color: #eaeaea;
+    color: #eaeaea; /* Match services description color */
     max-width: 600px;
     margin: 0 auto 30px;
 }
@@ -39,8 +45,8 @@
 .cta-button {
     padding: 10px 20px;
     font-size: 1rem;
-    color: #ffffff;
-    background-color: #00bfff;
+    color: #ffffff; /* Keep white for contrast */
+    background-color: #00bfff; /* Match services button color */
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -49,6 +55,6 @@
 }
 
 .cta-button:hover {
-    background-color: #007acc;
+    background-color: #007acc; /* Match services hover color */
     transform: translateY(-2px);
 }
