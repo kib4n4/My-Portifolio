@@ -5,7 +5,7 @@ function About() {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    const allSkills = ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Flask', 'SQL'];
+    const allSkills = ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Flask', 'SQL','Django'];
     let index = 0;
     const interval = setInterval(() => {
       if (index < allSkills.length) {

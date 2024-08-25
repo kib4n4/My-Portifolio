@@ -20,7 +20,7 @@ body {
     opacity: 0.95; /* Increased opacity for better visibility */
     border-radius: 15px; /* Rounded corners */
     margin: 20px;
-    margin-top: 50px;
+    margin-top: 75px;
     max-height: 800px;
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */

@@ -20,6 +20,8 @@ ul {
     overflow: hidden; /* Contain neon effect */
     width: 90%; /* Full width on small screens */
     max-width: 400px; /* Limit max width */
+    height: 150px;
+    
     margin: 20px; /* Margin for spacing */
 }
 
